@@ -16,15 +16,16 @@ public class Ex_11 {
         System.out.print("Deseja debitar(-)ou creditar (+) : ");
         operation = input.next();
 
-        if(operation.equals("+"))
-        result = balance + value;
-
-        else
+        if(operation.equals("+")){
+            result = balance + value;
+        } else{
+            result = balance - value;
+        }
 
         if( result >= balance){
             System.out.print("O seu saldo é positivo :  " + result);
         } else{
-            System.out.print("O seu saldo é negativo :  " + result);
+            System.out.print("Operação inválida! o seu saldo é negativo :  " + result);
         }
 
 
