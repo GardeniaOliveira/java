@@ -2,11 +2,10 @@ package ficha06;
 
 import java.util.Scanner;
 
-public class Ex_08 {
-
+public class Ex_09 {
     static int preencherArray(int[] vetor){
         Scanner input= new Scanner(System.in);
-        int maiorElemento=0;
+        int menorElemento;
 
 
         vetor = new int[10];
@@ -17,17 +16,17 @@ public class Ex_08 {
         }
 
 
-        maiorElemento= vetor[0];
+        menorElemento= vetor[0];
 
         for(int i=0; i< vetor.length; i++){
 
-            if ( vetor[i] > maiorElemento) {
-                maiorElemento=vetor[i];
+            if ( vetor[i] < menorElemento) {
+                menorElemento=vetor[i];
 
             }
 
         }
-        return maiorElemento;
+        return menorElemento;
 
 
 
@@ -35,11 +34,10 @@ public class Ex_08 {
     }
 
     public static void main(String[] args) {
-        int[ ] vetor = new int[10];
+        int[] vetor = new int[10];
 
-        System.out.println( preencherArray(vetor));
+        System.out.println(preencherArray(vetor));
+
 
     }
-
-
 }
