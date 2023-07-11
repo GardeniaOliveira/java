@@ -6,19 +6,37 @@ public class Ex_13 {
 
     static void   desenharColuna( String caracter,int linha, int coluna){
 
-        for(int i=0; i<linha; i++){
+        for(int i=0; i<coluna-1; i++){
+            System.out.print(" " + caracter + " ");
+        }
 
-            for(int j=0; j<coluna; j++){
-                System.out.print(" " + caracter + " ");
-            }
-            System.out.println(" ");
 
-            for(int l=0; l<linha+2; l++){
-                System.out.print(" ");
-            }
+
+            //for(int j=0; j<1 && j==6; j++){
+        /*for(int j=0; j>linha-1; j++){
+                System.out.print( caracter);
+                for(int l=2;l<coluna; l++){
+                    System.out.print(" ");
+                }
+        }*/
+
+        //primeira coluna
+       for(int i=0; i<linha-1; i++){
+           System.out.println(" " + caracter + " ");
 
         }
+
+
+
+       //ultima linha
+        for(int i=0; i<coluna; i++){
+            System.out.print(" " + caracter + " ");
+        }
+
+
+
     }
+
     public static void main(String[] args) {
         Scanner input= new Scanner(System.in);
 
