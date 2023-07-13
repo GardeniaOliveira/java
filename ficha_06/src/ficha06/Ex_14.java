@@ -4,29 +4,29 @@ import java.util.Scanner;
 
 public class Ex_14 {
     static void somarMatrizes(int[ ][ ] matriz1, int[ ][ ] matriz2){
+        int soma=0;
 
+    for (int linhaMatriz=0; linhaMatriz<matriz1.length; linhaMatriz++){
+    for (int colunaMatriz=0; colunaMatriz<matriz1[0].length; colunaMatriz++){
 
-
+        soma= matriz1[linhaMatriz][colunaMatriz] + matriz2[linhaMatriz][colunaMatriz];
+        System.out.print("\t"+soma);
+    }
+    System.out.println();
+}
 
     }
-    static int somatorioMatrizes(int[ ][ ] matriz1, int[ ][ ] matriz2){
+    static int somatorioMatrizes(int[ ][ ] matriz1, int[ ][ ] matriz2) {
         int somatorio=0;
 
-        for(int i=0; i<matriz1.length; i++){
-            for (int j=0; j<matriz1.length; j++)
-        somatorio += matriz1[i][i];
-        }
-        System.out.println(somatorio);
+        for (int linhaMatriz = 0; linhaMatriz < matriz1.length; linhaMatriz++) {
+            for (int colunaMatriz = 0; colunaMatriz < matriz1.length; colunaMatriz++) {
+                somatorio +=  matriz1[linhaMatriz][colunaMatriz] + matriz2[linhaMatriz][colunaMatriz] ;
+            }
 
-
-        for(int i=0; i<matriz2.length; i++){
-            for (int j=0; j<matriz2.length; j++)
-                somatorio += matriz2[i][i];
         }
-        System.out.println(somatorio);
+        System.out.print("este é o resultado do somatório: " +somatorio);
         return somatorio;
-
-
     }
     public static void main(String[] args) {
         Scanner input= new Scanner(System.in);
@@ -35,11 +35,8 @@ public class Ex_14 {
         int[][] matriz2 = new int[3][3];
         int somatorio;
 
-// Inicializar matriz
-        somarMatrizes(matriz1, matriz2);
-       somatorio = somatorioMatrizes(matriz1, matriz2);
-       
 
+        //criar matriz1
         for(int linha=0; linha<3; linha++){
 
             //o for da coluna executa 3x antes de voltar para o for da linha;
@@ -48,7 +45,17 @@ public class Ex_14 {
                 matriz1[linha][coluna] = input.nextInt();
             }
         }
+        //imprimir matriz1
 
+        for( int linha=0; linha<3; linha++){
+
+            for(int coluna=0; coluna<3; coluna++){
+                System.out.print(" "+matriz1[linha][coluna]+" ");
+            }
+            System.out.println(" ");
+        }
+
+        //criar matriz2
         for(int linha=0; linha<3; linha++){
 
             //o for da coluna executa 3x antes de voltar para o for da linha;
@@ -59,5 +66,18 @@ public class Ex_14 {
             }
 
         }
+
+        //imprimir matriz2
+
+        for( int linha=0; linha<3; linha++){
+
+            for(int coluna=0; coluna<3; coluna++){
+                System.out.print(" "+matriz2[linha][coluna]+" ");
+            }
+            System.out.println(" ");
+        }
+
+        somarMatrizes(matriz1,matriz2);
+        somatorio = somatorioMatrizes(matriz1, matriz2);
     }
 }

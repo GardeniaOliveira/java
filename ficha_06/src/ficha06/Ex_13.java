@@ -24,13 +24,25 @@ public class Ex_13 {
        for(int i=0; i<linha-1; i++){
            System.out.println(" " + caracter + " ");
 
-        }
 
+
+       }
 
 
        //ultima linha
         for(int i=0; i<coluna; i++){
             System.out.print(" " + caracter + " ");
+        }
+
+       for (int i = 1; i <= linha; i++) {
+            for (int x = 1; x <= coluna; x++) {
+                if (i == 1 || i == linha || x == 1 || x == coluna) {
+                    System.out.print(caracter);
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
         }
 
 
