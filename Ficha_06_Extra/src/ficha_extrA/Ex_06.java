@@ -8,10 +8,11 @@ public class Ex_06 {
 
         num1 = num/100;
         System.out.println(num1);
+divisao=num1;
 
         System.out.println(num1);
 
-        num2= num%100;
+        num2= divisao%10;
         System.out.println(num2);
 
         num3= num%10;
