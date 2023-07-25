@@ -15,11 +15,12 @@ public class Ex07 {
 
         while(in.hasNextLine()){
             linha=in.nextLine();
-            String[]itensDaLinha= linha.split("  ");
-            words+=linha.length();
-            line += 1;
+            String[]itensDaLinha= linha.split(" ");
 
-            //System.out.println(linha.length());
+            words+= itensDaLinha.length;
+
+            //words+= linha.length();
+            line += 1;
 
 
         }
