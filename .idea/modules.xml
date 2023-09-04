@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Ficha03/Ficha03.iml" filepath="$PROJECT_DIR$/Ficha03/Ficha03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ficha_06_Extra/Ficha_06_Extra.iml" filepath="$PROJECT_DIR$/Ficha_06_Extra/Ficha_06_Extra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ex02/ex02.iml" filepath="$PROJECT_DIR$/ex02/ex02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ficha02/ficha02.iml" filepath="$PROJECT_DIR$/ficha02/ficha02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ficha04/ficha04.iml" filepath="$PROJECT_DIR$/ficha04/ficha04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ficha05/ficha05.iml" filepath="$PROJECT_DIR$/ficha05/ficha05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ficha07/ficha07.iml" filepath="$PROJECT_DIR$/ficha07/ficha07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ficha_05/ficha_05.iml" filepath="$PROJECT_DIR$/ficha_05/ficha_05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ficha_06/ficha_06.iml" filepath="$PROJECT_DIR$/ficha_06/ficha_06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/java.iml" filepath="$PROJECT_DIR$/.idea/java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/prova/prova.iml" filepath="$PROJECT_DIR$/prova/prova.iml" />
+    </modules>
+  </component>
+</project>
