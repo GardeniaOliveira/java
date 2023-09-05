@@ -7,5 +7,9 @@ public class Main {
 
         carro1.ligar();
 
+
+        Carro carro2 = new Carro("fiat", "palio", 2023);
+        carro2.ligar();
+
     }
 }
